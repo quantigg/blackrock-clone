@@ -1,0 +1,54 @@
+/* Language Switcher Container */
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Dropdown Select Styling */
+#languageSelect {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Custom Dropdown Arrow */
+#languageSelect::-ms-expand {
+  display: none;
+}
+
+#languageSelect:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Hover Effect */
+#languageSelect:hover {
+  border-color: #007bff;
+}
+
+/* Custom Arrow Styling */
+/* .language-switcher::after {
+  content: "▼";
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  right: 15px;
+  pointer-events: none;
+} */
+
+/* Adjusting for Small Screens */
+@media (max-width: 600px) {
+  #languageSelect {
+    width: 100%;
+    font-size: 14px;
+  }
+}

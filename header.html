@@ -1,0 +1,180 @@
+<html>
+
+<body>
+  <div class="masthead desktop hide-on-mobile">
+    <div class="nav-dropdown location">
+      <div class="col-12">
+        <header>
+          <span class="icon icon-globe"></span>
+          <div class="heading-3" id="locationHeader">选择您所在市场</div>
+          <button class="fa fa-white fa-close no-outline" aria-label="Close the location selector block"><img
+              src="/image/close.png" alt=""></button>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div class="i-headerx">
+    <div class="i-header-box">
+      <div class="i-header-logo">
+        <a href="/index.html"><img src="/image/Quantify Global Logo - op-03.png" alt=""></a>
+        <div class="i-header-list">
+          <div class="nav-item">
+            <div class="nav-item-word">
+              <a href="/index.html#" data-key="aboutUs">关于我们</a>
+            </div>
+            <div class="nav-slide-box">
+              <div class="nav-slide-main">
+                <div class="i-header-move-list">
+                  <div class="i-header-move-list-title">
+                    <a href="/index.html#" data-key="aboutBlackRock">认识量化全球</a>
+                  </div>
+                  <div class="i-header-move-list-info">
+                    <a href="/content/about-us/lianghuaquanqiu-jj.html" data-key="blackRockFund">量化全球基金</a>
+                  </div>
+                  <div class="i-header-move-list-info">
+                    <a href="/content/about-us/lianghuaquanqiu-jt.html" data-key="blackRockGroup">量化全球集团</a>
+                  </div>
+                  <div class="i-header-move-list-info">
+                    <a href="/content/about-us/management.html" data-key="management">量化全球基金管理层</a>
+                  </div>
+                  <div class="i-header-move-list-info">
+                    <a href="/content/about-us/contact-us.html" data-key="contactUs">联系我们</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-item-word">
+              <a href="/index.html#" data-key="fundProducts">基金产品</a>
+            </div>
+            <div class="nav-slide-box">
+              <div class="nav-slide-main">
+                <div class="i-header-move-list">
+                  <div class="i-header-move-list-info">
+                    <a href="/content/jijinchanping/vangold.html" data-key="vangold">VanGold 金峰领航黄金基金</a>
+                  </div>
+                  <div class="i-header-move-list-info">
+                    <a href="/content/jijinchanping/blockchain-bridge.html" data-key="blockchain-bridge">Blockchain
+                      Bridge 链桥数字基金</a>
+                  </div>
+                  <div class="i-header-move-list-info">
+                    <a href="/content/jijinchanping/eagle-equities.html" data-key="eagle-equities">Eagle Equities
+                      飞鹰美股基金</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-item-word">
+              <a href="/index.html#" data-key="investmentViews">投资观点</a>
+            </div>
+            <div class="nav-slide-box">
+              <div class="nav-slide-main">
+                <div class="i-header-move-list">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-item-word">
+              <a href="/index.html#" data-key="investorEducation">投资者教育</a>
+            </div>
+            <div class="nav-slide-box">
+              <div class="nav-slide-main">
+                <div class="i-header-move-list">
+                  <div class="i-header-move-list-title">
+                    <a href="/index.html#">聪明投资</a>
+                  </div>
+                  <div class="i-header-move-list-info">
+                    <a href="/ctzzs.html">投资知识</a>
+                  </div>
+                  <div class="i-header-move-list-info">
+                    <a href="/educate/congming/ctzln/index.html">投资理念</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="i-header-closes">
+        <img src="/image/close.png" alt="">
+      </div>
+      <div class="language-switcher">
+        <select id="languageSelect">
+          <!-- <option value="zh">中文</option>
+                        <option value="en">English</option>
+                        <option value="ko">한국어</option>
+                        <option value="ja">日本語</option> -->
+          <option value="zh">zh</option>
+          <option value="en">en</option>
+          <option value="ko">ko</option>
+          <option value="ja">ja</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOR TOPBAR TAB DROPDOWN -->
+  <script>
+    $(".i-header-close").click(function () {
+      $(".i-search-box").show()
+      $(".i-header-close").hide()
+      $(".i-header-closes").show()
+    })
+    $(".i-header-closes").click(function () {
+      $(".i-search-box").hide()
+      $(".i-header-close").show()
+      $(".i-header-closes").hide()
+    })
+    $(".btn-holderx").click(function () {
+      var display = $(".nav-dropdown").css('display');
+      if (display == 'none') {
+        $(".a-btn-holder").css({ "background-color": "#000", "color": "#fff", })
+        $(".a-btn-holder button").css({ "background-color": "#000", "color": "#fff", })
+        $(".nav-dropdown").stop().slideDown();
+        // $(".i-headerx").hide()
+      } else {
+        $(".a-btn-holder").css({ "background-color": "#efefef", "color": "#000", })
+        $(".a-btn-holder button").css({ "background-color": "#efefef", "color": "#000", })
+        $(".nav-dropdown").stop().slideUp()
+        // $(".i-headerx").show()
+      }
+    })
+    $(".no-outline").click(function () {
+      $(".a-btn-holder").css({ "background-color": "#efefef", "color": "#000", })
+      $(".a-btn-holder button").css({ "background-color": "#efefef", "color": "#000", })
+      $(".nav-dropdown").stop().slideUp()
+      // $(".i-headerx").show()
+    })
+    $(".i-header-list .nav-item").hover(function () {
+      $(this).find('.nav-slide-box').stop().slideDown();
+    }, function () {
+      $(".i-header-list .nav-item").find('.nav-slide-box').stop().slideUp();
+    })
+
+    $(function () {
+      $('.body').css('overflow-y', 'hidden')
+    })
+    $('.i-popup-right-accept').click(function () {
+      $('.i-popup-box').css('display', 'none')
+      $('.body').css('overflow-y', 'visible')
+    })
+    // 判断是否是移动端打开
+    function browserRedirect() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {
+        // 移动端页面
+        $('body').css('width', '135%')
+      } else {
+        // pc端页面
+        $('body').css({ "width": "100%", "overflow-x": "hidden" })
+      }
+    }
+  </script>
+</body>
+
+</html>
